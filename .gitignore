@@ -1,1 +1,4 @@
 node_modules
+git config --global user.name "ammss-afk"
+git config --global user.email "ilhaminsani002@gmail.com"
+
