@@ -1,3 +1,7 @@
+"use client"; // kalau belum ada (karena file pakai hook)
+
+import React, { useState } from "react";
+
 "use client";
 import { Card, SectionTitle, Button } from "@/components/ui";
 import { useApp } from "@/components/AppState";
@@ -5,7 +9,7 @@ import { INCOTERMS } from "@/lib/products";
 
 export default function DashboardPage(){
   const { role, addSellerProduct, sellerProducts } = useApp();
-  const [form, setForm] = React.useState({ name:"", category:"", priceUSD:"", moq:"", unit:"", hs:"", lead:"", origin:"", incoterms:["FOB"] as string[], fobPort:"" });
+  const [form, setForm] = useState({ name:"", category:"", priceUSD:"", moq:"", unit:"", hs:"", lead:"", origin:"", incoterms:["FOB"] as string[], fobPort:"" });
   return (
     <main className="mx-auto max-w-7xl px-4 py-8 space-y-6">
       <SectionTitle title="Seller Dashboard (UMKM)" subtitle="Kelola katalog, harga FOB, MOQ, dan lead time." />
