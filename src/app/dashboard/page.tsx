@@ -1,8 +1,6 @@
 "use client"; // kalau belum ada (karena file pakai hook)
 
 import React, { useState } from "react";
-
-"use client";
 import { Card, SectionTitle, Button } from "@/components/ui";
 import { useApp } from "@/components/AppState";
 import { INCOTERMS } from "@/lib/products";
