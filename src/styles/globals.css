@@ -1,3 +1,4 @@
+/* Ensure this file is processed by Tailwind CSS build tool, not directly by the browser */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
